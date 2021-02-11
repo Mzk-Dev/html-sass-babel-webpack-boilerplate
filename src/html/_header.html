@@ -5,27 +5,29 @@
 </head>
 <header>
   <div class="grid-row">
-    <nav id="main-nav">
-      <ul>
-        <li data-nav-custom-content>
-          <div>Some custom content</div>
-        </li>
-        <li data-nav-highlight><a href="#">Home</a></li>
-        <li data-nav-active>
-          <a href="#">About</a>
-          <ul data-nav-active><!-- or active attribute can be here -->
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Services</a></li>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="../assets/img/logo.png" alt="logo">
+      </div>
+      <div>
+        <nav  id="main-nav">
+          <ul class='firstNav'>
+            <li><a>Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a data-nav-close="false" href="#">Contact</a></li>
           </ul>
-        </li>
-        <li><a href="#">Contact</a></li>
-        <li><a data-nav-close="false" href="#">Add Page</a></li>
-      </ul>
-    </nav>
-    <a class="toggle" href="#">
-      <img class="favicon" src="../assets/img/favicon.png">
-    </a>
+          <ul class="secondNav" data-nav-active>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </nav>
+        <a class="toggle" href="#">
+          <img class="favicon" src="../assets/img/favicon.png">
+        </a>
+      </div>
+    </div>
   </div>
 </header>
 <body>

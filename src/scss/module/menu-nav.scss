@@ -7,5 +7,60 @@
   width: 50px;
   height: 50px;
 }
-
-
+.grid-row{
+  position: relative;
+}
+.wrapper{
+  width: 1440px;
+  padding: 10px 100px ;
+}
+#hc-nav-1{
+  position: absolute;
+  // right: 0px;
+  // top:0px;
+}
+.grid-row{
+  div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    nav{
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        li{
+          list-style: none;
+          
+          a{
+            text-decoration: none;
+            color:black;
+          }
+        }
+      }
+    }
+  }
+}
+.firstNav{
+  li:first-child{
+    a{
+      color:white;
+      padding: 10px 20px;
+      background-color:#00B19B;
+      border-radius: 5px;
+      border: 0px;
+      
+    }
+  }
+  li{
+    margin-left:20px;
+  }
+}
+.secondNav{
+  li{
+    
+    font-weight: 700;
+    margin-left:20px;
+  }
+}

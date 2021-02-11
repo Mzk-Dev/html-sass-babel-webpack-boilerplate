@@ -9,31 +9,31 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 // change nav open position after each close
-Nav.on('close', function(e, settings) {
-  Nav.update({
-    position: settings.position === 'left' ? 'right' : 'left'
-  });
-});
+// Nav.on('close', function(e, settings) {
+//   Nav.update({
+//     position: settings.position === 'left' ? 'right' : 'left'
+//   });
+// });
 
-// will change nav open position only once
-Nav.on('close.once', function(e, settings) {
-  Nav.update({
-    position: settings.position === 'left' ? 'right' : 'left'
-  });
-});
+// // will change nav open position only once
+// Nav.on('close.once', function(e, settings) {
+//   Nav.update({
+//     position: settings.position === 'left' ? 'right' : 'left'
+//   });
+// });
 
-Nav.on('open.level', (e, settings) => {
-  localStorage.setItem('NavLevel', e.data.currentLevel);
-  localStorage.setItem('NavIndex', e.data.currentIndex);
-});
+// Nav.on('open.level', (e, settings) => {
+//   localStorage.setItem('NavLevel', e.data.currentLevel);
+//   localStorage.setItem('NavIndex', e.data.currentIndex);
+// });
 
-Nav.on('close.level', (e, settings) => {
-  localStorage.setItem('NavLevel', e.data.currentLevel);
-  localStorage.setItem('NavIndex', e.data.currentIndex);
-});
+// Nav.on('close.level', (e, settings) => {
+//   localStorage.setItem('NavLevel', e.data.currentLevel);
+//   localStorage.setItem('NavIndex', e.data.currentIndex);
+// });
 
-Nav.on('toggle', (e, settings) => {
-  if (e.data.action == 'open') {
-    // do something when `open` action is triggered
-  }
-});
+// Nav.on('toggle', (e, settings) => {
+//   if (e.data.action == 'open') {
+//     // do something when `open` action is triggered
+//   }
+// });
