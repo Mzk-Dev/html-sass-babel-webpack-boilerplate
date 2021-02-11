@@ -7,6 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlFileNames = fs.readdirSync('./src/html/');
 
+
 const getEntries = () => {
     const entries = [
         './src/js/app.js',
